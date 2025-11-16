@@ -1,0 +1,173 @@
+WARNING: Ignoring invalid distribution ~orch (/rds/general/user/mb3324/home/miniforge3/envs/pytorch_env/lib/python3.11/site-packages)
+WARNING: Ignoring invalid distribution ~orch (/rds/general/user/mb3324/home/miniforge3/envs/pytorch_env/lib/python3.11/site-packages)
+WARNING: Ignoring invalid distribution ~orch (/rds/general/user/mb3324/home/miniforge3/envs/pytorch_env/lib/python3.11/site-packages)
+WARNING: Ignoring invalid distribution ~orch (/rds/general/user/mb3324/home/miniforge3/envs/pytorch_env/lib/python3.11/site-packages)
+WARNING: Ignoring invalid distribution ~orch (/rds/general/user/mb3324/home/miniforge3/envs/pytorch_env/lib/python3.11/site-packages)
+WARNING: Ignoring invalid distribution ~orch (/rds/general/user/mb3324/home/miniforge3/envs/pytorch_env/lib/python3.11/site-packages)
+make: mpifort: Command not found
+make: *** [../Makefile_elmfire:22: elmfire_vars.o] Error 127
+cp: cannot stat 'elmfire': No such file or directory
+make: mpifort: Command not found
+make: *** [../Makefile_elmfire:22: elmfire_vars.o] Error 127
+cp: cannot stat 'elmfire_debug': No such file or directory
+make: mpifort: Command not found
+make: *** [../Makefile_elmfire_post:22: elmfire_vars.o] Error 127
+cp: cannot stat 'elmfire_post': No such file or directory
+make: mpifort: Command not found
+make: *** [../Makefile_elmfire_post:22: elmfire_vars.o] Error 127
+cp: cannot stat 'elmfire_post_debug': No such file or directory
+
+Program received signal SIGILL: Illegal instruction.
+
+Backtrace for this error:
+#0  0x14aee16e9b4f in ???
+#1  0x461e99 in ???
+#2  0x4025e6 in ???
+#3  0x14aee16d5d84 in ???
+#4  0x40261d in ???
+#5  0xffffffffffffffff in ???
+01-run.sh: line 84: 1440914 Illegal instruction     (core dumped) elmfire_$ELMFIRE_VER ./inputs/elmfire.data
+ERROR 4: ./outputs/*.bil: No such file or directory
+ls: cannot access './outputs/time_of_arrival*.tif': No such file or directory
+ERROR 1: dst_filename: 1 argument(s) expected. 0 provided.
+mv: cannot stat 'outputs/*': No such file or directory
+
+Program received signal SIGILL: Illegal instruction.
+
+Backtrace for this error:
+#0  0x14697681ab4f in ???
+#1  0x461e99 in ???
+#2  0x4025e6 in ???
+#3  0x146976806d84 in ???
+#4  0x40261d in ???
+#5  0xffffffffffffffff in ???
+01-run.sh: line 84: 1441005 Illegal instruction     (core dumped) elmfire_$ELMFIRE_VER ./inputs/elmfire.data
+ERROR 4: ./outputs/*.bil: No such file or directory
+ls: cannot access './outputs/time_of_arrival*.tif': No such file or directory
+ERROR 1: dst_filename: 1 argument(s) expected. 0 provided.
+mv: cannot stat 'outputs/*': No such file or directory
+
+Program received signal SIGILL: Illegal instruction.
+
+Backtrace for this error:
+#0  0x14f1e67c4b4f in ???
+#1  0x461e99 in ???
+#2  0x4025e6 in ???
+#3  0x14f1e67b0d84 in ???
+#4  0x40261d in ???
+#5  0xffffffffffffffff in ???
+01-run.sh: line 84: 1441101 Illegal instruction     (core dumped) elmfire_$ELMFIRE_VER ./inputs/elmfire.data
+ERROR 4: ./outputs/*.bil: No such file or directory
+ls: cannot access './outputs/time_of_arrival*.tif': No such file or directory
+ERROR 1: dst_filename: 1 argument(s) expected. 0 provided.
+mv: cannot stat 'outputs/*': No such file or directory
+
+Program received signal SIGILL: Illegal instruction.
+
+Backtrace for this error:
+#0  0x1456481b4b4f in ???
+#1  0x461e99 in ???
+#2  0x4025e6 in ???
+#3  0x1456481a0d84 in ???
+#4  0x40261d in ???
+#5  0xffffffffffffffff in ???
+01-run.sh: line 84: 1441207 Illegal instruction     (core dumped) elmfire_$ELMFIRE_VER ./inputs/elmfire.data
+ERROR 4: ./outputs/*.bil: No such file or directory
+ls: cannot access './outputs/time_of_arrival*.tif': No such file or directory
+ERROR 1: dst_filename: 1 argument(s) expected. 0 provided.
+mv: cannot stat 'outputs/*': No such file or directory
+
+Program received signal SIGILL: Illegal instruction.
+
+Backtrace for this error:
+#0  0x14f383a5cb4f in ???
+#1  0x461e99 in ???
+#2  0x4025e6 in ???
+#3  0x14f383a48d84 in ???
+#4  0x40261d in ???
+#5  0xffffffffffffffff in ???
+01-run.sh: line 84: 1441300 Illegal instruction     (core dumped) elmfire_$ELMFIRE_VER ./inputs/elmfire.data
+ERROR 4: ./outputs/*.bil: No such file or directory
+ls: cannot access './outputs/time_of_arrival*.tif': No such file or directory
+ERROR 1: dst_filename: 1 argument(s) expected. 0 provided.
+mv: cannot stat 'outputs/*': No such file or directory
+
+Program received signal SIGILL: Illegal instruction.
+
+Backtrace for this error:
+#0  0x14b8afa31b4f in ???
+#1  0x461e99 in ???
+#2  0x4025e6 in ???
+#3  0x14b8afa1dd84 in ???
+#4  0x40261d in ???
+#5  0xffffffffffffffff in ???
+01-run.sh: line 84: 1441388 Illegal instruction     (core dumped) elmfire_$ELMFIRE_VER ./inputs/elmfire.data
+ERROR 4: ./outputs/*.bil: No such file or directory
+ls: cannot access './outputs/time_of_arrival*.tif': No such file or directory
+ERROR 1: dst_filename: 1 argument(s) expected. 0 provided.
+mv: cannot stat 'outputs/*': No such file or directory
+
+Program received signal SIGILL: Illegal instruction.
+
+Backtrace for this error:
+#0  0x145e17a69b4f in ???
+#1  0x461e99 in ???
+#2  0x4025e6 in ???
+#3  0x145e17a55d84 in ???
+#4  0x40261d in ???
+#5  0xffffffffffffffff in ???
+01-run.sh: line 84: 1441477 Illegal instruction     (core dumped) elmfire_$ELMFIRE_VER ./inputs/elmfire.data
+ERROR 4: ./outputs/*.bil: No such file or directory
+ls: cannot access './outputs/time_of_arrival*.tif': No such file or directory
+ERROR 1: dst_filename: 1 argument(s) expected. 0 provided.
+mv: cannot stat 'outputs/*': No such file or directory
+
+Program received signal SIGILL: Illegal instruction.
+
+Backtrace for this error:
+#0  0x14d17ee79b4f in ???
+#1  0x461e99 in ???
+#2  0x4025e6 in ???
+#3  0x14d17ee65d84 in ???
+#4  0x40261d in ???
+#5  0xffffffffffffffff in ???
+01-run.sh: line 84: 1441566 Illegal instruction     (core dumped) elmfire_$ELMFIRE_VER ./inputs/elmfire.data
+ERROR 4: ./outputs/*.bil: No such file or directory
+ls: cannot access './outputs/time_of_arrival*.tif': No such file or directory
+ERROR 1: dst_filename: 1 argument(s) expected. 0 provided.
+mv: cannot stat 'outputs/*': No such file or directory
+
+Program received signal SIGILL: Illegal instruction.
+
+Backtrace for this error:
+#0  0x14a1baa47b4f in ???
+#1  0x461e99 in ???
+#2  0x4025e6 in ???
+#3  0x14a1baa33d84 in ???
+#4  0x40261d in ???
+#5  0xffffffffffffffff in ???
+01-run.sh: line 84: 1441655 Illegal instruction     (core dumped) elmfire_$ELMFIRE_VER ./inputs/elmfire.data
+ERROR 4: ./outputs/*.bil: No such file or directory
+ls: cannot access './outputs/time_of_arrival*.tif': No such file or directory
+ERROR 1: dst_filename: 1 argument(s) expected. 0 provided.
+mv: cannot stat 'outputs/*': No such file or directory
+
+Program received signal SIGILL: Illegal instruction.
+
+Backtrace for this error:
+#0  0x14fcc7dd4b4f in ???
+#1  0x461e99 in ???
+#2  0x4025e6 in ???
+#3  0x14fcc7dc0d84 in ???
+#4  0x40261d in ???
+#5  0xffffffffffffffff in ???
+01-run.sh: line 84: 1441744 Illegal instruction     (core dumped) elmfire_$ELMFIRE_VER ./inputs/elmfire.data
+ERROR 4: ./outputs/*.bil: No such file or directory
+ls: cannot access './outputs/time_of_arrival*.tif': No such file or directory
+ERROR 1: dst_filename: 1 argument(s) expected. 0 provided.
+mv: cannot stat 'outputs/*': No such file or directory
+Traceback (most recent call last):
+  File "/var/tmp/pbs.809237.pbs-7/elmfire/docker_shared_folder/practice-runs/./postprocess/add_firearea_to_input_tracking.py", line 13, in <module>
+    raise ValueError(f"Number of fire areas ({len(fire_areas)+1}) does not match number of lines in {output_file} ({len(lines)})")
+ValueError: Number of fire areas (1) does not match number of lines in ./configuration/input_tracking.txt (11)
+cp: cannot stat '/var/tmp/pbs.809237.pbs-7/elmfire/docker_shared_folder/01-dataset/outputs/*': No such file or directory

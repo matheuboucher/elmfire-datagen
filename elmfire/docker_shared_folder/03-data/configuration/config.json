@@ -1,0 +1,106 @@
+{
+  "_comment": "ELMFIRE Parameter Configuration - Real-world fuel data with random weather/terrain",
+
+  "dataset": {
+    "name": "03-realfuel-data",
+    "version": "1.0",
+    "description": "Real-world fuel data with varying weather and terrain conditions"
+  },
+  
+  "output": {
+    "tracking_file": "./configuration/input_tracking.txt"
+  },
+  
+  "files": {
+    "bash_script": "./01-run.sh",
+    "elmfire_config": "./elmfire.data.in"
+  },
+
+  "directories": {
+    "cases_dir": "./cases",
+    "output_dir": "./processed_sims",
+    "configuration_dir": "./configuration",
+    "postprocess_dir": "./postprocess",
+    "output_check_dir": "./output_check"
+  },
+
+  "vars_to_track": {
+    "FLIN": false,
+    "SPREAD_RATE": true,
+    "TIME_OF_ARRIVAL": true,
+    "CROWN_FIRE": false,
+    "FLAME_LENGTH": true,
+    "REACTION_INTENSITY": false,
+    "HPUA": false,
+    "WD20": false,
+    "WS20": false,
+    "SURFACE_FIRE": false
+  },
+
+  "postprocess_vars": {
+    "SPREAD_RATE": "vs",
+    "TIME_OF_ARRIVAL": "time_of_arrival",
+    "FLAME_LENGTH": "flame_length"
+  },
+
+  "domain": {
+    "simulation_tstop": 22200.0,
+    "tstep_minutes": 15.0,
+    "_comment": "60km x 60km domain determined by CloudFire fuel data"
+  },
+
+  "postprocess": {
+    "variables": ["toa", "burnscar"],
+    "output_base_dir": "./processed_sims"
+  },
+  
+  "parameters": {
+    "terrain": {
+      "slope_range": [0, 45],
+      "aspect_range": [0, 360],
+      "_comment": "Applied as constant overlays on real topography"
+    },
+    
+    "wind": {
+      "speed_range": [0, 31],
+      "direction_range": [0, 360]
+    },
+    
+    "moisture": {
+      "use_realistic_scenarios": true,
+      
+      "dead_scenarios": {
+        "D1": [3, 4, 5],
+        "D2": [6, 7, 8],
+        "D3": [9, 10, 11],
+        "D4": [12, 13, 14]
+      },
+      
+      "live_scenarios": {
+        "L1": [30, 60],
+        "L2": [60, 90],
+        "L3": [90, 120],
+        "L4": [120, 150]
+      },
+      
+      "continuous_sampling": {
+        "enabled": false,
+        "m1_range": [3, 12],
+        "_note": "m10 = m1 + 1, m100 = m1 + 2 (maintains realistic gradients)",
+        "live_herbaceous_range": [30, 120],
+        "live_woody_range": [60, 150],
+        "constraint": "live_woody >= live_herbaceous + 20"
+      }
+    }
+  },
+  
+  "sampling": {
+    "strategy": "realistic",
+    "_options": "realistic, random, continuous",
+    "_notes": {
+      "realistic": "sample from D1-D4 x L1-L4 combinations (16 total)",
+      "random": "sample uniformly within broader ranges", 
+      "continuous": "sample continuously with physical constraints"
+    }
+  }
+}

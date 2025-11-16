@@ -1,0 +1,401 @@
+WARNING: Ignoring invalid distribution ~orch (/rds/general/user/mb3324/home/miniforge3/envs/pytorch_env/lib/python3.11/site-packages)
+WARNING: Ignoring invalid distribution ~orch (/rds/general/user/mb3324/home/miniforge3/envs/pytorch_env/lib/python3.11/site-packages)
+WARNING: Ignoring invalid distribution ~orch (/rds/general/user/mb3324/home/miniforge3/envs/pytorch_env/lib/python3.11/site-packages)
+WARNING: Ignoring invalid distribution ~orch (/rds/general/user/mb3324/home/miniforge3/envs/pytorch_env/lib/python3.11/site-packages)
+WARNING: Ignoring invalid distribution ~orch (/rds/general/user/mb3324/home/miniforge3/envs/pytorch_env/lib/python3.11/site-packages)
+WARNING: Ignoring invalid distribution ~orch (/rds/general/user/mb3324/home/miniforge3/envs/pytorch_env/lib/python3.11/site-packages)
+Lmod has detected the following error: The following module(s) are unknown:
+"openmpi"
+
+Please check the spelling or version number. Also try "module spider ..."
+It is also possible your cache file is out-of-date; it may help to try:
+  $ module --ignore_cache load "openmpi"
+
+Also make sure that all modulefiles written in TCL start with the string
+#%Module
+
+
+
+make: mpifort: Command not found
+make: *** [../Makefile_elmfire:22: elmfire_vars.o] Error 127
+cp: cannot stat 'elmfire': No such file or directory
+make: mpifort: Command not found
+make: *** [../Makefile_elmfire:22: elmfire_vars.o] Error 127
+cp: cannot stat 'elmfire_debug': No such file or directory
+make: mpifort: Command not found
+make: *** [../Makefile_elmfire_post:22: elmfire_vars.o] Error 127
+cp: cannot stat 'elmfire_post': No such file or directory
+make: mpifort: Command not found
+make: *** [../Makefile_elmfire_post:22: elmfire_vars.o] Error 127
+cp: cannot stat 'elmfire_post_debug': No such file or directory
+Traceback (most recent call last):
+  File "/var/tmp/pbs.809209.pbs-7/elmfire/docker_shared_folder/practice-runs/./configuration/set_params.py", line 276, in <module>
+    set_parameters()
+  File "/var/tmp/pbs.809209.pbs-7/elmfire/docker_shared_folder/practice-runs/./configuration/set_params.py", line 99, in set_parameters
+    config = load_config()
+             ^^^^^^^^^^^^^
+  File "/var/tmp/pbs.809209.pbs-7/elmfire/docker_shared_folder/practice-runs/./configuration/set_params.py", line 19, in load_config
+    config = json.load(f)
+             ^^^^^^^^^^^^
+  File "/rds/general/user/mb3324/home/miniforge3/envs/pytorch_env/lib/python3.11/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+           ^^^^^^^^^^^^^^^^
+  File "/rds/general/user/mb3324/home/miniforge3/envs/pytorch_env/lib/python3.11/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/rds/general/user/mb3324/home/miniforge3/envs/pytorch_env/lib/python3.11/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/rds/general/user/mb3324/home/miniforge3/envs/pytorch_env/lib/python3.11/json/decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+               ^^^^^^^^^^^^^^^^^^^^^^
+json.decoder.JSONDecodeError: Expecting ':' delimiter: line 40 column 5 (char 983)
+
+Program received signal SIGILL: Illegal instruction.
+
+Backtrace for this error:
+#0  0x14ea622c0b4f in ???
+#1  0x461e99 in ???
+#2  0x4025e6 in ???
+#3  0x14ea622acd84 in ???
+#4  0x40261d in ???
+#5  0xffffffffffffffff in ???
+01-run.sh: line 84: 1435286 Illegal instruction     (core dumped) elmfire_$ELMFIRE_VER ./inputs/elmfire.data
+ERROR 4: ./outputs/*.bil: No such file or directory
+ls: cannot access './outputs/time_of_arrival*.tif': No such file or directory
+ERROR 1: dst_filename: 1 argument(s) expected. 0 provided.
+mv: cannot stat 'outputs/*': No such file or directory
+Traceback (most recent call last):
+  File "/var/tmp/pbs.809209.pbs-7/elmfire/docker_shared_folder/practice-runs/./configuration/set_params.py", line 276, in <module>
+    set_parameters()
+  File "/var/tmp/pbs.809209.pbs-7/elmfire/docker_shared_folder/practice-runs/./configuration/set_params.py", line 99, in set_parameters
+    config = load_config()
+             ^^^^^^^^^^^^^
+  File "/var/tmp/pbs.809209.pbs-7/elmfire/docker_shared_folder/practice-runs/./configuration/set_params.py", line 19, in load_config
+    config = json.load(f)
+             ^^^^^^^^^^^^
+  File "/rds/general/user/mb3324/home/miniforge3/envs/pytorch_env/lib/python3.11/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+           ^^^^^^^^^^^^^^^^
+  File "/rds/general/user/mb3324/home/miniforge3/envs/pytorch_env/lib/python3.11/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/rds/general/user/mb3324/home/miniforge3/envs/pytorch_env/lib/python3.11/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/rds/general/user/mb3324/home/miniforge3/envs/pytorch_env/lib/python3.11/json/decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+               ^^^^^^^^^^^^^^^^^^^^^^
+json.decoder.JSONDecodeError: Expecting ':' delimiter: line 40 column 5 (char 983)
+
+Program received signal SIGILL: Illegal instruction.
+
+Backtrace for this error:
+#0  0x145701bf6b4f in ???
+#1  0x461e99 in ???
+#2  0x4025e6 in ???
+#3  0x145701be2d84 in ???
+#4  0x40261d in ???
+#5  0xffffffffffffffff in ???
+01-run.sh: line 84: 1435377 Illegal instruction     (core dumped) elmfire_$ELMFIRE_VER ./inputs/elmfire.data
+ERROR 4: ./outputs/*.bil: No such file or directory
+ls: cannot access './outputs/time_of_arrival*.tif': No such file or directory
+ERROR 1: dst_filename: 1 argument(s) expected. 0 provided.
+mv: cannot stat 'outputs/*': No such file or directory
+Traceback (most recent call last):
+  File "/var/tmp/pbs.809209.pbs-7/elmfire/docker_shared_folder/practice-runs/./configuration/set_params.py", line 276, in <module>
+    set_parameters()
+  File "/var/tmp/pbs.809209.pbs-7/elmfire/docker_shared_folder/practice-runs/./configuration/set_params.py", line 99, in set_parameters
+    config = load_config()
+             ^^^^^^^^^^^^^
+  File "/var/tmp/pbs.809209.pbs-7/elmfire/docker_shared_folder/practice-runs/./configuration/set_params.py", line 19, in load_config
+    config = json.load(f)
+             ^^^^^^^^^^^^
+  File "/rds/general/user/mb3324/home/miniforge3/envs/pytorch_env/lib/python3.11/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+           ^^^^^^^^^^^^^^^^
+  File "/rds/general/user/mb3324/home/miniforge3/envs/pytorch_env/lib/python3.11/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/rds/general/user/mb3324/home/miniforge3/envs/pytorch_env/lib/python3.11/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/rds/general/user/mb3324/home/miniforge3/envs/pytorch_env/lib/python3.11/json/decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+               ^^^^^^^^^^^^^^^^^^^^^^
+json.decoder.JSONDecodeError: Expecting ':' delimiter: line 40 column 5 (char 983)
+
+Program received signal SIGILL: Illegal instruction.
+
+Backtrace for this error:
+#0  0x149e3e888b4f in ???
+#1  0x461e99 in ???
+#2  0x4025e6 in ???
+#3  0x149e3e874d84 in ???
+#4  0x40261d in ???
+#5  0xffffffffffffffff in ???
+01-run.sh: line 84: 1435465 Illegal instruction     (core dumped) elmfire_$ELMFIRE_VER ./inputs/elmfire.data
+ERROR 4: ./outputs/*.bil: No such file or directory
+ls: cannot access './outputs/time_of_arrival*.tif': No such file or directory
+ERROR 1: dst_filename: 1 argument(s) expected. 0 provided.
+mv: cannot stat 'outputs/*': No such file or directory
+Traceback (most recent call last):
+  File "/var/tmp/pbs.809209.pbs-7/elmfire/docker_shared_folder/practice-runs/./configuration/set_params.py", line 276, in <module>
+    set_parameters()
+  File "/var/tmp/pbs.809209.pbs-7/elmfire/docker_shared_folder/practice-runs/./configuration/set_params.py", line 99, in set_parameters
+    config = load_config()
+             ^^^^^^^^^^^^^
+  File "/var/tmp/pbs.809209.pbs-7/elmfire/docker_shared_folder/practice-runs/./configuration/set_params.py", line 19, in load_config
+    config = json.load(f)
+             ^^^^^^^^^^^^
+  File "/rds/general/user/mb3324/home/miniforge3/envs/pytorch_env/lib/python3.11/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+           ^^^^^^^^^^^^^^^^
+  File "/rds/general/user/mb3324/home/miniforge3/envs/pytorch_env/lib/python3.11/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/rds/general/user/mb3324/home/miniforge3/envs/pytorch_env/lib/python3.11/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/rds/general/user/mb3324/home/miniforge3/envs/pytorch_env/lib/python3.11/json/decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+               ^^^^^^^^^^^^^^^^^^^^^^
+json.decoder.JSONDecodeError: Expecting ':' delimiter: line 40 column 5 (char 983)
+
+Program received signal SIGILL: Illegal instruction.
+
+Backtrace for this error:
+#0  0x14b67efd3b4f in ???
+#1  0x461e99 in ???
+#2  0x4025e6 in ???
+#3  0x14b67efbfd84 in ???
+#4  0x40261d in ???
+#5  0xffffffffffffffff in ???
+01-run.sh: line 84: 1435560 Illegal instruction     (core dumped) elmfire_$ELMFIRE_VER ./inputs/elmfire.data
+ERROR 4: ./outputs/*.bil: No such file or directory
+ls: cannot access './outputs/time_of_arrival*.tif': No such file or directory
+ERROR 1: dst_filename: 1 argument(s) expected. 0 provided.
+mv: cannot stat 'outputs/*': No such file or directory
+Traceback (most recent call last):
+  File "/var/tmp/pbs.809209.pbs-7/elmfire/docker_shared_folder/practice-runs/./configuration/set_params.py", line 276, in <module>
+    set_parameters()
+  File "/var/tmp/pbs.809209.pbs-7/elmfire/docker_shared_folder/practice-runs/./configuration/set_params.py", line 99, in set_parameters
+    config = load_config()
+             ^^^^^^^^^^^^^
+  File "/var/tmp/pbs.809209.pbs-7/elmfire/docker_shared_folder/practice-runs/./configuration/set_params.py", line 19, in load_config
+    config = json.load(f)
+             ^^^^^^^^^^^^
+  File "/rds/general/user/mb3324/home/miniforge3/envs/pytorch_env/lib/python3.11/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+           ^^^^^^^^^^^^^^^^
+  File "/rds/general/user/mb3324/home/miniforge3/envs/pytorch_env/lib/python3.11/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/rds/general/user/mb3324/home/miniforge3/envs/pytorch_env/lib/python3.11/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/rds/general/user/mb3324/home/miniforge3/envs/pytorch_env/lib/python3.11/json/decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+               ^^^^^^^^^^^^^^^^^^^^^^
+json.decoder.JSONDecodeError: Expecting ':' delimiter: line 40 column 5 (char 983)
+
+Program received signal SIGILL: Illegal instruction.
+
+Backtrace for this error:
+#0  0x148cc31ecb4f in ???
+#1  0x461e99 in ???
+#2  0x4025e6 in ???
+#3  0x148cc31d8d84 in ???
+#4  0x40261d in ???
+#5  0xffffffffffffffff in ???
+01-run.sh: line 84: 1435649 Illegal instruction     (core dumped) elmfire_$ELMFIRE_VER ./inputs/elmfire.data
+ERROR 4: ./outputs/*.bil: No such file or directory
+ls: cannot access './outputs/time_of_arrival*.tif': No such file or directory
+ERROR 1: dst_filename: 1 argument(s) expected. 0 provided.
+mv: cannot stat 'outputs/*': No such file or directory
+Traceback (most recent call last):
+  File "/var/tmp/pbs.809209.pbs-7/elmfire/docker_shared_folder/practice-runs/./configuration/set_params.py", line 276, in <module>
+    set_parameters()
+  File "/var/tmp/pbs.809209.pbs-7/elmfire/docker_shared_folder/practice-runs/./configuration/set_params.py", line 99, in set_parameters
+    config = load_config()
+             ^^^^^^^^^^^^^
+  File "/var/tmp/pbs.809209.pbs-7/elmfire/docker_shared_folder/practice-runs/./configuration/set_params.py", line 19, in load_config
+    config = json.load(f)
+             ^^^^^^^^^^^^
+  File "/rds/general/user/mb3324/home/miniforge3/envs/pytorch_env/lib/python3.11/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+           ^^^^^^^^^^^^^^^^
+  File "/rds/general/user/mb3324/home/miniforge3/envs/pytorch_env/lib/python3.11/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/rds/general/user/mb3324/home/miniforge3/envs/pytorch_env/lib/python3.11/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/rds/general/user/mb3324/home/miniforge3/envs/pytorch_env/lib/python3.11/json/decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+               ^^^^^^^^^^^^^^^^^^^^^^
+json.decoder.JSONDecodeError: Expecting ':' delimiter: line 40 column 5 (char 983)
+
+Program received signal SIGILL: Illegal instruction.
+
+Backtrace for this error:
+#0  0x1474a11ccb4f in ???
+#1  0x461e99 in ???
+#2  0x4025e6 in ???
+#3  0x1474a11b8d84 in ???
+#4  0x40261d in ???
+#5  0xffffffffffffffff in ???
+01-run.sh: line 84: 1435737 Illegal instruction     (core dumped) elmfire_$ELMFIRE_VER ./inputs/elmfire.data
+ERROR 4: ./outputs/*.bil: No such file or directory
+ls: cannot access './outputs/time_of_arrival*.tif': No such file or directory
+ERROR 1: dst_filename: 1 argument(s) expected. 0 provided.
+mv: cannot stat 'outputs/*': No such file or directory
+Traceback (most recent call last):
+  File "/var/tmp/pbs.809209.pbs-7/elmfire/docker_shared_folder/practice-runs/./configuration/set_params.py", line 276, in <module>
+    set_parameters()
+  File "/var/tmp/pbs.809209.pbs-7/elmfire/docker_shared_folder/practice-runs/./configuration/set_params.py", line 99, in set_parameters
+    config = load_config()
+             ^^^^^^^^^^^^^
+  File "/var/tmp/pbs.809209.pbs-7/elmfire/docker_shared_folder/practice-runs/./configuration/set_params.py", line 19, in load_config
+    config = json.load(f)
+             ^^^^^^^^^^^^
+  File "/rds/general/user/mb3324/home/miniforge3/envs/pytorch_env/lib/python3.11/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+           ^^^^^^^^^^^^^^^^
+  File "/rds/general/user/mb3324/home/miniforge3/envs/pytorch_env/lib/python3.11/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/rds/general/user/mb3324/home/miniforge3/envs/pytorch_env/lib/python3.11/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/rds/general/user/mb3324/home/miniforge3/envs/pytorch_env/lib/python3.11/json/decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+               ^^^^^^^^^^^^^^^^^^^^^^
+json.decoder.JSONDecodeError: Expecting ':' delimiter: line 40 column 5 (char 983)
+
+Program received signal SIGILL: Illegal instruction.
+
+Backtrace for this error:
+#0  0x148d699aeb4f in ???
+#1  0x461e99 in ???
+#2  0x4025e6 in ???
+#3  0x148d6999ad84 in ???
+#4  0x40261d in ???
+#5  0xffffffffffffffff in ???
+01-run.sh: line 84: 1435827 Illegal instruction     (core dumped) elmfire_$ELMFIRE_VER ./inputs/elmfire.data
+ERROR 4: ./outputs/*.bil: No such file or directory
+ls: cannot access './outputs/time_of_arrival*.tif': No such file or directory
+ERROR 1: dst_filename: 1 argument(s) expected. 0 provided.
+mv: cannot stat 'outputs/*': No such file or directory
+Traceback (most recent call last):
+  File "/var/tmp/pbs.809209.pbs-7/elmfire/docker_shared_folder/practice-runs/./configuration/set_params.py", line 276, in <module>
+    set_parameters()
+  File "/var/tmp/pbs.809209.pbs-7/elmfire/docker_shared_folder/practice-runs/./configuration/set_params.py", line 99, in set_parameters
+    config = load_config()
+             ^^^^^^^^^^^^^
+  File "/var/tmp/pbs.809209.pbs-7/elmfire/docker_shared_folder/practice-runs/./configuration/set_params.py", line 19, in load_config
+    config = json.load(f)
+             ^^^^^^^^^^^^
+  File "/rds/general/user/mb3324/home/miniforge3/envs/pytorch_env/lib/python3.11/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+           ^^^^^^^^^^^^^^^^
+  File "/rds/general/user/mb3324/home/miniforge3/envs/pytorch_env/lib/python3.11/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/rds/general/user/mb3324/home/miniforge3/envs/pytorch_env/lib/python3.11/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/rds/general/user/mb3324/home/miniforge3/envs/pytorch_env/lib/python3.11/json/decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+               ^^^^^^^^^^^^^^^^^^^^^^
+json.decoder.JSONDecodeError: Expecting ':' delimiter: line 40 column 5 (char 983)
+
+Program received signal SIGILL: Illegal instruction.
+
+Backtrace for this error:
+#0  0x148839667b4f in ???
+#1  0x461e99 in ???
+#2  0x4025e6 in ???
+#3  0x148839653d84 in ???
+#4  0x40261d in ???
+#5  0xffffffffffffffff in ???
+01-run.sh: line 84: 1435915 Illegal instruction     (core dumped) elmfire_$ELMFIRE_VER ./inputs/elmfire.data
+ERROR 4: ./outputs/*.bil: No such file or directory
+ls: cannot access './outputs/time_of_arrival*.tif': No such file or directory
+ERROR 1: dst_filename: 1 argument(s) expected. 0 provided.
+mv: cannot stat 'outputs/*': No such file or directory
+Traceback (most recent call last):
+  File "/var/tmp/pbs.809209.pbs-7/elmfire/docker_shared_folder/practice-runs/./configuration/set_params.py", line 276, in <module>
+    set_parameters()
+  File "/var/tmp/pbs.809209.pbs-7/elmfire/docker_shared_folder/practice-runs/./configuration/set_params.py", line 99, in set_parameters
+    config = load_config()
+             ^^^^^^^^^^^^^
+  File "/var/tmp/pbs.809209.pbs-7/elmfire/docker_shared_folder/practice-runs/./configuration/set_params.py", line 19, in load_config
+    config = json.load(f)
+             ^^^^^^^^^^^^
+  File "/rds/general/user/mb3324/home/miniforge3/envs/pytorch_env/lib/python3.11/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+           ^^^^^^^^^^^^^^^^
+  File "/rds/general/user/mb3324/home/miniforge3/envs/pytorch_env/lib/python3.11/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/rds/general/user/mb3324/home/miniforge3/envs/pytorch_env/lib/python3.11/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/rds/general/user/mb3324/home/miniforge3/envs/pytorch_env/lib/python3.11/json/decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+               ^^^^^^^^^^^^^^^^^^^^^^
+json.decoder.JSONDecodeError: Expecting ':' delimiter: line 40 column 5 (char 983)
+
+Program received signal SIGILL: Illegal instruction.
+
+Backtrace for this error:
+#0  0x14b54b28db4f in ???
+#1  0x461e99 in ???
+#2  0x4025e6 in ???
+#3  0x14b54b279d84 in ???
+#4  0x40261d in ???
+#5  0xffffffffffffffff in ???
+01-run.sh: line 84: 1436011 Illegal instruction     (core dumped) elmfire_$ELMFIRE_VER ./inputs/elmfire.data
+ERROR 4: ./outputs/*.bil: No such file or directory
+ls: cannot access './outputs/time_of_arrival*.tif': No such file or directory
+ERROR 1: dst_filename: 1 argument(s) expected. 0 provided.
+mv: cannot stat 'outputs/*': No such file or directory
+Traceback (most recent call last):
+  File "/var/tmp/pbs.809209.pbs-7/elmfire/docker_shared_folder/practice-runs/./configuration/set_params.py", line 276, in <module>
+    set_parameters()
+  File "/var/tmp/pbs.809209.pbs-7/elmfire/docker_shared_folder/practice-runs/./configuration/set_params.py", line 99, in set_parameters
+    config = load_config()
+             ^^^^^^^^^^^^^
+  File "/var/tmp/pbs.809209.pbs-7/elmfire/docker_shared_folder/practice-runs/./configuration/set_params.py", line 19, in load_config
+    config = json.load(f)
+             ^^^^^^^^^^^^
+  File "/rds/general/user/mb3324/home/miniforge3/envs/pytorch_env/lib/python3.11/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+           ^^^^^^^^^^^^^^^^
+  File "/rds/general/user/mb3324/home/miniforge3/envs/pytorch_env/lib/python3.11/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/rds/general/user/mb3324/home/miniforge3/envs/pytorch_env/lib/python3.11/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/rds/general/user/mb3324/home/miniforge3/envs/pytorch_env/lib/python3.11/json/decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+               ^^^^^^^^^^^^^^^^^^^^^^
+json.decoder.JSONDecodeError: Expecting ':' delimiter: line 40 column 5 (char 983)
+
+Program received signal SIGILL: Illegal instruction.
+
+Backtrace for this error:
+#0  0x146aa86efb4f in ???
+#1  0x461e99 in ???
+#2  0x4025e6 in ???
+#3  0x146aa86dbd84 in ???
+#4  0x40261d in ???
+#5  0xffffffffffffffff in ???
+01-run.sh: line 84: 1436100 Illegal instruction     (core dumped) elmfire_$ELMFIRE_VER ./inputs/elmfire.data
+ERROR 4: ./outputs/*.bil: No such file or directory
+ls: cannot access './outputs/time_of_arrival*.tif': No such file or directory
+ERROR 1: dst_filename: 1 argument(s) expected. 0 provided.
+mv: cannot stat 'outputs/*': No such file or directory
+cp: cannot stat '/var/tmp/pbs.809209.pbs-7/elmfire/docker_shared_folder/01-dataset/outputs/*': No such file or directory

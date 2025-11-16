@@ -1,0 +1,364 @@
+Copying elmfire to TMPDIR...
+Building ELMFIRE...
+Making elmfire_gnu_mpi_linux
+mpifort -c -O3 -unroll -frecord-marker=4 -ffree-line-length-none -cpp -march=native -ffpe-summary=none ../../source/elmfire_vars.f90
+mpifort -c -O3 -unroll -frecord-marker=4 -ffree-line-length-none -cpp -march=native -ffpe-summary=none ../../source/sort.for
+mpifort -c -O3 -unroll -frecord-marker=4 -ffree-line-length-none -cpp -march=native -ffpe-summary=none ../../source/elmfire_init.f90
+mpifort -c -O3 -unroll -frecord-marker=4 -ffree-line-length-none -cpp -march=native -ffpe-summary=none ../../source/elmfire_namelists.f90
+mpifort -c -O3 -unroll -frecord-marker=4 -ffree-line-length-none -cpp -march=native -ffpe-summary=none ../../source/elmfire_spread_rate.f90
+mpifort -c -O3 -unroll -frecord-marker=4 -ffree-line-length-none -cpp -march=native -ffpe-summary=none ../../source/elmfire_subs.f90
+mpifort -c -O3 -unroll -frecord-marker=4 -ffree-line-length-none -cpp -march=native -ffpe-summary=none ../../source/elmfire_ignition.f90
+mpifort -c -O3 -unroll -frecord-marker=4 -ffree-line-length-none -cpp -march=native -ffpe-summary=none ../../source/elmfire_io.f90
+mpifort -c -O3 -unroll -frecord-marker=4 -ffree-line-length-none -cpp -march=native -ffpe-summary=none ../../source/elmfire_suppression.f90
+mpifort -c -O3 -unroll -frecord-marker=4 -ffree-line-length-none -cpp -march=native -ffpe-summary=none ../../source/elmfire_spotting.f90
+mpifort -c -O3 -unroll -frecord-marker=4 -ffree-line-length-none -cpp -march=native -ffpe-summary=none ../../source/elmfire_spotting_superseded.f90
+mpifort -c -O3 -unroll -frecord-marker=4 -ffree-line-length-none -cpp -march=native -ffpe-summary=none ../../source/elmfire_calibration.f90
+mpifort -c -O3 -unroll -frecord-marker=4 -ffree-line-length-none -cpp -march=native -ffpe-summary=none ../../source/elmfire_level_set.f90
+mpifort -c -O3 -unroll -frecord-marker=4 -ffree-line-length-none -cpp -march=native -ffpe-summary=none ../../source/elmfire.f90
+mpifort -O3 -unroll -frecord-marker=4 -ffree-line-length-none -cpp -march=native -ffpe-summary=none -o elmfire elmfire_vars.o sort.o elmfire_init.o elmfire_namelists.o elmfire_spread_rate.o elmfire_subs.o elmfire_ignition.o elmfire_io.o elmfire_suppression.o elmfire_spotting.o elmfire_spotting_superseded.o elmfire_calibration.o elmfire_level_set.o elmfire.o
+Making elmfire_gnu_mpi_debug_linux
+mpifort -c -O0 -g -Wall -fcheck=all -fbounds-check -fbacktrace -fdump-core -ffpe-trap=invalid,zero,overflow -frecord-marker=4 -ffree-line-length-none -cpp -Wno-character-truncation -Wno-conversion -finit-real=snan -finit-integer=-99999999 ../../source/elmfire_vars.f90
+mpifort -c -O0 -g -Wall -fcheck=all -fbounds-check -fbacktrace -fdump-core -ffpe-trap=invalid,zero,overflow -frecord-marker=4 -ffree-line-length-none -cpp -Wno-character-truncation -Wno-conversion -finit-real=snan -finit-integer=-99999999 ../../source/sort.for
+mpifort -c -O0 -g -Wall -fcheck=all -fbounds-check -fbacktrace -fdump-core -ffpe-trap=invalid,zero,overflow -frecord-marker=4 -ffree-line-length-none -cpp -Wno-character-truncation -Wno-conversion -finit-real=snan -finit-integer=-99999999 ../../source/elmfire_init.f90
+mpifort -c -O0 -g -Wall -fcheck=all -fbounds-check -fbacktrace -fdump-core -ffpe-trap=invalid,zero,overflow -frecord-marker=4 -ffree-line-length-none -cpp -Wno-character-truncation -Wno-conversion -finit-real=snan -finit-integer=-99999999 ../../source/elmfire_namelists.f90
+mpifort -c -O0 -g -Wall -fcheck=all -fbounds-check -fbacktrace -fdump-core -ffpe-trap=invalid,zero,overflow -frecord-marker=4 -ffree-line-length-none -cpp -Wno-character-truncation -Wno-conversion -finit-real=snan -finit-integer=-99999999 ../../source/elmfire_spread_rate.f90
+mpifort -c -O0 -g -Wall -fcheck=all -fbounds-check -fbacktrace -fdump-core -ffpe-trap=invalid,zero,overflow -frecord-marker=4 -ffree-line-length-none -cpp -Wno-character-truncation -Wno-conversion -finit-real=snan -finit-integer=-99999999 ../../source/elmfire_subs.f90
+mpifort -c -O0 -g -Wall -fcheck=all -fbounds-check -fbacktrace -fdump-core -ffpe-trap=invalid,zero,overflow -frecord-marker=4 -ffree-line-length-none -cpp -Wno-character-truncation -Wno-conversion -finit-real=snan -finit-integer=-99999999 ../../source/elmfire_ignition.f90
+mpifort -c -O0 -g -Wall -fcheck=all -fbounds-check -fbacktrace -fdump-core -ffpe-trap=invalid,zero,overflow -frecord-marker=4 -ffree-line-length-none -cpp -Wno-character-truncation -Wno-conversion -finit-real=snan -finit-integer=-99999999 ../../source/elmfire_io.f90
+mpifort -c -O0 -g -Wall -fcheck=all -fbounds-check -fbacktrace -fdump-core -ffpe-trap=invalid,zero,overflow -frecord-marker=4 -ffree-line-length-none -cpp -Wno-character-truncation -Wno-conversion -finit-real=snan -finit-integer=-99999999 ../../source/elmfire_suppression.f90
+mpifort -c -O0 -g -Wall -fcheck=all -fbounds-check -fbacktrace -fdump-core -ffpe-trap=invalid,zero,overflow -frecord-marker=4 -ffree-line-length-none -cpp -Wno-character-truncation -Wno-conversion -finit-real=snan -finit-integer=-99999999 ../../source/elmfire_spotting.f90
+mpifort -c -O0 -g -Wall -fcheck=all -fbounds-check -fbacktrace -fdump-core -ffpe-trap=invalid,zero,overflow -frecord-marker=4 -ffree-line-length-none -cpp -Wno-character-truncation -Wno-conversion -finit-real=snan -finit-integer=-99999999 ../../source/elmfire_spotting_superseded.f90
+mpifort -c -O0 -g -Wall -fcheck=all -fbounds-check -fbacktrace -fdump-core -ffpe-trap=invalid,zero,overflow -frecord-marker=4 -ffree-line-length-none -cpp -Wno-character-truncation -Wno-conversion -finit-real=snan -finit-integer=-99999999 ../../source/elmfire_calibration.f90
+mpifort -c -O0 -g -Wall -fcheck=all -fbounds-check -fbacktrace -fdump-core -ffpe-trap=invalid,zero,overflow -frecord-marker=4 -ffree-line-length-none -cpp -Wno-character-truncation -Wno-conversion -finit-real=snan -finit-integer=-99999999 ../../source/elmfire_level_set.f90
+mpifort -c -O0 -g -Wall -fcheck=all -fbounds-check -fbacktrace -fdump-core -ffpe-trap=invalid,zero,overflow -frecord-marker=4 -ffree-line-length-none -cpp -Wno-character-truncation -Wno-conversion -finit-real=snan -finit-integer=-99999999 ../../source/elmfire.f90
+mpifort -O0 -g -Wall -fcheck=all -fbounds-check -fbacktrace -fdump-core -ffpe-trap=invalid,zero,overflow -frecord-marker=4 -ffree-line-length-none -cpp -Wno-character-truncation -Wno-conversion -finit-real=snan -finit-integer=-99999999 -o elmfire_debug elmfire_vars.o sort.o elmfire_init.o elmfire_namelists.o elmfire_spread_rate.o elmfire_subs.o elmfire_ignition.o elmfire_io.o elmfire_suppression.o elmfire_spotting.o elmfire_spotting_superseded.o elmfire_calibration.o elmfire_level_set.o elmfire.o
+Making elmfire_post
+mpifort -c -O3 -unroll -frecord-marker=4 -ffree-line-length-none -cpp -march=native -fopenmp -ffpe-summary=none ../../source/elmfire_vars.f90
+mpifort -c -O3 -unroll -frecord-marker=4 -ffree-line-length-none -cpp -march=native -fopenmp -ffpe-summary=none ../../source/sort.for
+mpifort -c -O3 -unroll -frecord-marker=4 -ffree-line-length-none -cpp -march=native -fopenmp -ffpe-summary=none ../../source/elmfire_subs.f90
+mpifort -c -O3 -unroll -frecord-marker=4 -ffree-line-length-none -cpp -march=native -fopenmp -ffpe-summary=none ../../source/elmfire_io.f90
+mpifort -c -O3 -unroll -frecord-marker=4 -ffree-line-length-none -cpp -march=native -fopenmp -ffpe-summary=none ../../source/elmfire_post.f90
+mpifort -O3 -unroll -frecord-marker=4 -ffree-line-length-none -cpp -march=native -fopenmp -ffpe-summary=none -o elmfire_post elmfire_vars.o sort.o elmfire_subs.o elmfire_io.o elmfire_post.o
+Making elmfire_post_gnu_debug_linux
+mpifort -c -O0 -g -Wall -fcheck=all -fbacktrace -fdump-core -ffpe-trap=zero,overflow -frecord-marker=4 -ffree-line-length-none -cpp -Wno-character-truncation -Wno-conversion -fopenmp ../../source/elmfire_vars.f90
+mpifort -c -O0 -g -Wall -fcheck=all -fbacktrace -fdump-core -ffpe-trap=zero,overflow -frecord-marker=4 -ffree-line-length-none -cpp -Wno-character-truncation -Wno-conversion -fopenmp ../../source/sort.for
+mpifort -c -O0 -g -Wall -fcheck=all -fbacktrace -fdump-core -ffpe-trap=zero,overflow -frecord-marker=4 -ffree-line-length-none -cpp -Wno-character-truncation -Wno-conversion -fopenmp ../../source/elmfire_subs.f90
+mpifort -c -O0 -g -Wall -fcheck=all -fbacktrace -fdump-core -ffpe-trap=zero,overflow -frecord-marker=4 -ffree-line-length-none -cpp -Wno-character-truncation -Wno-conversion -fopenmp ../../source/elmfire_io.f90
+mpifort -c -O0 -g -Wall -fcheck=all -fbacktrace -fdump-core -ffpe-trap=zero,overflow -frecord-marker=4 -ffree-line-length-none -cpp -Wno-character-truncation -Wno-conversion -fopenmp ../../source/elmfire_post.f90
+mpifort -O0 -g -Wall -fcheck=all -fbacktrace -fdump-core -ffpe-trap=zero,overflow -frecord-marker=4 -ffree-line-length-none -cpp -Wno-character-truncation -Wno-conversion -fopenmp -o elmfire_post_debug elmfire_vars.o sort.o elmfire_subs.o elmfire_io.o elmfire_post.o
+Cleaning up
+Running ELMFIRE process...
+START RUN: 0
+CLEAR CASES AND SIMS
+RESET INPUT AND FIRE AREA TRACKING FILES
+Running simulation for run number: 0
+0
+Run 0: Using D2_L1 moisture scenario
+Parameters set for run 0
+  Fuel model: 101
+  Ignition: (-179.0, -493.3)
+  Moisture scenario: D2_L1
+  Dead fuels: 6.0, 7.0, 8.0
+  Live fuels: 30.0, 60.0
+Creating output file that is 1P x 1L.
+Processing ./scratch/dummy.xyz [1/1] : 0...10...20...30...40...50...60...70...80...90...100 - done.
+Creating output file that is 128P x 128L.
+Processing ./scratch/dummy.tif [1/1] : 0...10...20...30...40...50...60...70...80...90...100 - done.
+Creating output file that is 128P x 128L.
+Processing ./scratch/dummy.tif [1/1] : 0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+Running simulation for run number: 1
+1
+Run 1: Using D3_L2 moisture scenario
+Parameters set for run 1
+  Fuel model: 101
+  Ignition: (573.7, -521.6)
+  Moisture scenario: D3_L2
+  Dead fuels: 9.0, 10.0, 11.0
+  Live fuels: 60.0, 90.0
+Creating output file that is 1P x 1L.
+Processing ./scratch/dummy.xyz [1/1] : 0...10...20...30...40...50...60...70...80...90...100 - done.
+Creating output file that is 128P x 128L.
+Processing ./scratch/dummy.tif [1/1] : 0...10...20...30...40...50...60...70...80...90...100 - done.
+Creating output file that is 128P x 128L.
+Processing ./scratch/dummy.tif [1/1] : 0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+Running simulation for run number: 2
+1
+Run 2: Using D4_L2 moisture scenario
+Parameters set for run 2
+  Fuel model: 101
+  Ignition: (431.2, 326.8)
+  Moisture scenario: D4_L2
+  Dead fuels: 12.0, 13.0, 14.0
+  Live fuels: 60.0, 90.0
+Creating output file that is 1P x 1L.
+Processing ./scratch/dummy.xyz [1/1] : 0...10...20...30...40...50...60...70...80...90...100 - done.
+Creating output file that is 128P x 128L.
+Processing ./scratch/dummy.tif [1/1] : 0...10...20...30...40...50...60...70...80...90...100 - done.
+Creating output file that is 128P x 128L.
+Processing ./scratch/dummy.tif [1/1] : 0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+Running simulation for run number: 3
+1
+Run 3: Using D1_L2 moisture scenario
+Parameters set for run 3
+  Fuel model: 101
+  Ignition: (-945.9, 695.6)
+  Moisture scenario: D1_L2
+  Dead fuels: 3.0, 4.0, 5.0
+  Live fuels: 60.0, 90.0
+Creating output file that is 1P x 1L.
+Processing ./scratch/dummy.xyz [1/1] : 0...10...20...30...40...50...60...70...80...90...100 - done.
+Creating output file that is 128P x 128L.
+Processing ./scratch/dummy.tif [1/1] : 0...10...20...30...40...50...60...70...80...90...100 - done.
+Creating output file that is 128P x 128L.
+Processing ./scratch/dummy.tif [1/1] : 0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+Running simulation for run number: 4
+1
+Run 4: Using D3_L2 moisture scenario
+Parameters set for run 4
+  Fuel model: 101
+  Ignition: (245.2, 777.9)
+  Moisture scenario: D3_L2
+  Dead fuels: 9.0, 10.0, 11.0
+  Live fuels: 60.0, 90.0
+Creating output file that is 1P x 1L.
+Processing ./scratch/dummy.xyz [1/1] : 0...10...20...30...40...50...60...70...80...90...100 - done.
+Creating output file that is 128P x 128L.
+Processing ./scratch/dummy.tif [1/1] : 0...10...20...30...40...50...60...70...80...90...100 - done.
+Creating output file that is 128P x 128L.
+Processing ./scratch/dummy.tif [1/1] : 0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+Running simulation for run number: 5
+1
+Run 5: Using D4_L4 moisture scenario
+Parameters set for run 5
+  Fuel model: 101
+  Ignition: (-633.7, -529.1)
+  Moisture scenario: D4_L4
+  Dead fuels: 12.0, 13.0, 14.0
+  Live fuels: 120.0, 150.0
+Creating output file that is 1P x 1L.
+Processing ./scratch/dummy.xyz [1/1] : 0...10...20...30...40...50...60...70...80...90...100 - done.
+Creating output file that is 128P x 128L.
+Processing ./scratch/dummy.tif [1/1] : 0...10...20...30...40...50...60...70...80...90...100 - done.
+Creating output file that is 128P x 128L.
+Processing ./scratch/dummy.tif [1/1] : 0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+Running simulation for run number: 6
+1
+Run 6: Using D2_L1 moisture scenario
+Parameters set for run 6
+  Fuel model: 101
+  Ignition: (-911.2, 450.7)
+  Moisture scenario: D2_L1
+  Dead fuels: 6.0, 7.0, 8.0
+  Live fuels: 30.0, 60.0
+Creating output file that is 1P x 1L.
+Processing ./scratch/dummy.xyz [1/1] : 0...10...20...30...40...50...60...70...80...90...100 - done.
+Creating output file that is 128P x 128L.
+Processing ./scratch/dummy.tif [1/1] : 0...10...20...30...40...50...60...70...80...90...100 - done.
+Creating output file that is 128P x 128L.
+Processing ./scratch/dummy.tif [1/1] : 0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+Running simulation for run number: 7
+1
+Run 7: Using D2_L2 moisture scenario
+Parameters set for run 7
+  Fuel model: 101
+  Ignition: (67.8, -894.5)
+  Moisture scenario: D2_L2
+  Dead fuels: 6.0, 7.0, 8.0
+  Live fuels: 60.0, 90.0
+Creating output file that is 1P x 1L.
+Processing ./scratch/dummy.xyz [1/1] : 0...10...20...30...40...50...60...70...80...90...100 - done.
+Creating output file that is 128P x 128L.
+Processing ./scratch/dummy.tif [1/1] : 0...10...20...30...40...50...60...70...80...90...100 - done.
+Creating output file that is 128P x 128L.
+Processing ./scratch/dummy.tif [1/1] : 0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+Running simulation for run number: 8
+1
+Run 8: Using D3_L4 moisture scenario
+Parameters set for run 8
+  Fuel model: 101
+  Ignition: (-361.7, 928.3)
+  Moisture scenario: D3_L4
+  Dead fuels: 9.0, 10.0, 11.0
+  Live fuels: 120.0, 150.0
+Creating output file that is 1P x 1L.
+Processing ./scratch/dummy.xyz [1/1] : 0...10...20...30...40...50...60...70...80...90...100 - done.
+Creating output file that is 128P x 128L.
+Processing ./scratch/dummy.tif [1/1] : 0...10...20...30...40...50...60...70...80...90...100 - done.
+Creating output file that is 128P x 128L.
+Processing ./scratch/dummy.tif [1/1] : 0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+Running simulation for run number: 9
+1
+Run 9: Using D4_L2 moisture scenario
+Parameters set for run 9
+  Fuel model: 101
+  Ignition: (-401.7, 854.4)
+  Moisture scenario: D4_L2
+  Dead fuels: 12.0, 13.0, 14.0
+  Live fuels: 60.0, 90.0
+Creating output file that is 1P x 1L.
+Processing ./scratch/dummy.xyz [1/1] : 0...10...20...30...40...50...60...70...80...90...100 - done.
+Creating output file that is 128P x 128L.
+Processing ./scratch/dummy.tif [1/1] : 0...10...20...30...40...50...60...70...80...90...100 - done.
+Creating output file that is 128P x 128L.
+Processing ./scratch/dummy.tif [1/1] : 0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+Copying results back...
+Job completed successfully
+
+====================================
+CPU Time used: 00:02:09
+CPU Percent: 89%
+Memory usage: 1344196kb
+Approx Power usage: 0.0004
+Walltime usage: 00:07:49
+
+====================================

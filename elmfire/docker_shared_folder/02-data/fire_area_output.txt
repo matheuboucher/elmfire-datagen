@@ -1,0 +1,4 @@
+Meteorology band      1: Case #       1 complete.  Fire area:   1171.4 acres.
+Meteorology band      1: Case #       1 complete.  Fire area:   3404.9 acres.
+Meteorology band      1: Case #       1 complete.  Fire area:   3419.5 acres.
+Meteorology band      1: Case #       1 complete.  Fire area:    416.3 acres.

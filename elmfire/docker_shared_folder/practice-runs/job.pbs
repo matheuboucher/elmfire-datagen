@@ -1,0 +1,67 @@
+#!/bin/bash
+#PBS -l walltime=04:00:00
+#PBS -l select=1:ncpus=4:mem=16gb
+#PBS -N elmfire_build_and_run
+
+# Change to home directory first
+cd $HOME
+
+# Activate conda environment
+eval "$(~/miniforge3/bin/conda shell.bash hook)"
+conda activate pytorch_env
+
+# Load modules
+module load OpenMPI
+module load GDAL
+
+# Set environment variables
+export ELMFIRE_BASE_DIR=$TMPDIR/elmfire
+export ELMFIRE_INSTALL_DIR=$ELMFIRE_BASE_DIR/build/linux/bin
+export PATH=$PATH:$ELMFIRE_INSTALL_DIR:$ELMFIRE_BASE_DIR/cloudfire
+
+# Copy entire elmfire directory to $TMPDIR
+echo "Copying elmfire to TMPDIR..."
+cp -r $HOME/elmfire $TMPDIR/
+if [ $? -ne 0 ]; then
+    echo "Failed to copy elmfire directory"
+    exit 1
+fi
+
+# Build ELMFIRE in $TMPDIR (faster local storage)
+echo "Building ELMFIRE..."
+cd $TMPDIR/elmfire/build/linux
+./make_gnu.sh
+
+if [ $? -ne 0 ]; then
+    echo "ELMFIRE build failed"
+    exit 1
+fi
+
+# Verify executables were created
+if [ ! -f "$ELMFIRE_INSTALL_DIR/elmfire" ]; then
+    echo "ELMFIRE executable not found after build"
+    exit 1
+fi
+
+# Change to the dataset directory
+cd $TMPDIR/elmfire/docker_shared_folder/practice-runs
+
+# Run your script with arguments
+echo "Running ELMFIRE process..."
+bash 0N-full-process.sh 10
+if [ $? -ne 0 ]; then
+    echo "ELMFIRE process failed"
+    exit 1
+fi
+
+# Create output directory if it doesn't exist
+mkdir -p $HOME/01-dataset-realistic-hpc
+
+# Copy results back (fix the syntax)
+echo "Copying results back..."
+cp -r $TMPDIR/elmfire/docker_shared_folder/01-dataset/outputs/* $HOME/01-dataset-realistic-hpc/
+# Also copy any other important files
+cp -r $TMPDIR/elmfire/docker_shared_folder/01-dataset/*.tif $HOME/01-dataset-realistic-hpc/ 2>/dev/null || true
+cp -r $TMPDIR/elmfire/docker_shared_folder/01-dataset/*.log $HOME/01-dataset-realistic-hpc/ 2>/dev/null || true
+
+echo "Job completed successfully"

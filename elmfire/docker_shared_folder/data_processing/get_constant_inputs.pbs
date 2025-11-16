@@ -1,0 +1,55 @@
+#!/bin/bash
+#PBS -l walltime=06:30:00
+#PBS -l select=1:ncpus=4:mem=275gb:ngpus=1
+#PBS -j oe
+#PBS -N process_wildfire_data
+
+# Load conda environment
+eval "$(~/miniforge3/bin/conda shell.bash hook)"
+conda activate pytorch_env
+
+# Test GPU availability
+echo "Testing GPU availability:"
+python -c "import torch; print(f'CUDA available: {torch.cuda.is_available()}'); print(f'GPU count: {torch.cuda.device_count()}'); print(f'GPU name: {torch.cuda.get_device_name(0) if torch.cuda.is_available() else \"No GPU\"}')"
+
+# Set up directories
+echo "Setting up directories..."
+echo "PBS_O_WORKDIR: $PBS_O_WORKDIR"
+echo "TMPDIR: $TMPDIR"
+
+# Copy entire SCALED directory to fast local storage
+echo "Copying SCALED directory to TMPDIR..."
+cp -r $PBS_O_WORKDIR/ $TMPDIR/
+
+# Contents of HOME
+echo "contents of $HOME"
+ls $HOME/
+
+# Copy data from .. to scaled-cylinderflow-data
+echo "Copying SCALED data in folder to TMPDIR..."
+cp -r $HOME/data-wildfire/processed_sims $TMPDIR/
+cp -r $HOME/data_processing/* $TMPDIR/
+
+# Change to the working directory
+cd $TMPDIR/
+# show contents
+echo "Contents of wd:"
+ls
+
+# Run wildfire training
+echo "Starting wildfire raw data processing..."
+echo "Start time: $(date)"
+
+python ./tvt_datasets_const_input.py
+
+# Create a timestamp
+TIMESTAMP=$(date +"%Y%m%d")
+
+# Extract job ID
+JOBID=$(echo $PBS_JOBID | cut -d. -f1)
+
+echo "Moving processed simulations back to home directory..."
+mv $TMPDIR/data $HOME/
+
+echo "Job completed successfully!"
+echo "Results available at: $OUTPUT_DIR"

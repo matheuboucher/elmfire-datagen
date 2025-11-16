@@ -1,0 +1,64 @@
+#!/bin/bash
+#PBS -l walltime=00:30:00
+#PBS -l select=1:ncpus=1:mem=3gb
+#PBS -j oe
+#PBS -N cylinder_flow_training
+
+# Load conda environment
+eval "$(~/miniforge3/bin/conda shell.bash hook)"
+conda activate pytorch_env
+
+# Test GPU availability
+echo "Testing GPU availability:"
+python -c "import torch; print(f'CUDA available: {torch.cuda.is_available()}'); print(f'GPU count: {torch.cuda.device_count()}'); print(f'GPU name: {torch.cuda.get_device_name(0) if torch.cuda.is_available() else \"No GPU\"}')"
+
+# Set up directories
+echo "Setting up directories..."
+echo "PBS_O_WORKDIR: $PBS_O_WORKDIR"
+echo "TMPDIR: $TMPDIR"
+
+# Copy entire SCALED directory to fast local storage
+echo "Copying SCALED directory to TMPDIR..."
+cp -r $PBS_O_WORKDIR/* $TMPDIR/
+
+echo "contents of PBS WORKING DIR:"
+ls $PBS_O_WORKDIR/
+
+echo "contents of TMPDIR:"
+ls $TMPDIR/
+
+# Contents of HOME
+echo "contents of $HOME"
+ls $HOME/
+
+cd $TMPDIR/
+echo "Starting postprocessing..."
+
+# add fire area to input tracking
+python3 ./add_firearea_to_input_tracking.py
+
+# start a timer for speed testing
+START_TIME2=$(date +%s)
+python3 ./elmfire_postprocessor.py
+# End of postprocessing
+# End timer and calculate duration
+END_TIME2=$(date +%s)
+DURATION2=$((END_TIME2 - START_TIME2))
+# send time to ./output_check/timings.csv, directory already made
+echo "postprocessing_duration: $DURATION2 (s)" >> ./output_check/timings.csv
+
+# get constant input frames and create train, val, test datasets
+python3 ./tvt_datasets_const_input.py
+
+ELMFIRE_DIR="./elmfire_gen_files"
+rm -f -r $ELMFIRE_DIR
+mkdir $ELMFIRE_DIR
+mkdir -p $ELMFIRE_DIR/inputs
+mv ./inputs $ELMFIRE_DIR
+mv ./outputs $ELMFIRE_DIR
+
+cp -r $TMPDIR/* $PBS_O_WORKDIR/
+
+# DURATION=$((END_TIME - START_TIME))
+# send time to ./output_check/timings.csv, directory already made
+# echo "total_duration: $DURATION (s)" >> ./output_check/timings.csv

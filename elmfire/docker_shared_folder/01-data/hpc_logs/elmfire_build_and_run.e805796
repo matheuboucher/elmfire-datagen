@@ -1,0 +1,20 @@
+WARNING: Ignoring invalid distribution ~orch (/rds/general/user/mb3324/home/miniforge3/envs/pytorch_env/lib/python3.11/site-packages)
+WARNING: Ignoring invalid distribution ~orch (/rds/general/user/mb3324/home/miniforge3/envs/pytorch_env/lib/python3.11/site-packages)
+WARNING: Ignoring invalid distribution ~orch (/rds/general/user/mb3324/home/miniforge3/envs/pytorch_env/lib/python3.11/site-packages)
+WARNING: Ignoring invalid distribution ~orch (/rds/general/user/mb3324/home/miniforge3/envs/pytorch_env/lib/python3.11/site-packages)
+WARNING: Ignoring invalid distribution ~orch (/rds/general/user/mb3324/home/miniforge3/envs/pytorch_env/lib/python3.11/site-packages)
+WARNING: Ignoring invalid distribution ~orch (/rds/general/user/mb3324/home/miniforge3/envs/pytorch_env/lib/python3.11/site-packages)
+make: mpifort: Command not found
+make: *** [../Makefile_elmfire:22: elmfire_vars.o] Error 127
+cp: cannot stat 'elmfire': No such file or directory
+make: mpifort: Command not found
+make: *** [../Makefile_elmfire:22: elmfire_vars.o] Error 127
+cp: cannot stat 'elmfire_debug': No such file or directory
+make: mpifort: Command not found
+make: *** [../Makefile_elmfire_post:22: elmfire_vars.o] Error 127
+cp: cannot stat 'elmfire_post': No such file or directory
+make: mpifort: Command not found
+make: *** [../Makefile_elmfire_post:22: elmfire_vars.o] Error 127
+cp: cannot stat 'elmfire_post_debug': No such file or directory
+/var/spool/pbs/mom_priv/jobs/805796.pbs-7.SC: line 49: cd: /var/tmp/pbs.805796.pbs-7/elmfire/docker_shared_folder/01-dataset: No such file or directory
+bash: 0N-run-full-process.sh: No such file or directory

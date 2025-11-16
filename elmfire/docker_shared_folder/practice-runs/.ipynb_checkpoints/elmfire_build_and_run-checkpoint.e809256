@@ -1,0 +1,231 @@
+WARNING: Ignoring invalid distribution ~orch (/rds/general/user/mb3324/home/miniforge3/envs/pytorch_env/lib/python3.11/site-packages)
+WARNING: Ignoring invalid distribution ~orch (/rds/general/user/mb3324/home/miniforge3/envs/pytorch_env/lib/python3.11/site-packages)
+WARNING: Ignoring invalid distribution ~orch (/rds/general/user/mb3324/home/miniforge3/envs/pytorch_env/lib/python3.11/site-packages)
+WARNING: Ignoring invalid distribution ~orch (/rds/general/user/mb3324/home/miniforge3/envs/pytorch_env/lib/python3.11/site-packages)
+WARNING: Ignoring invalid distribution ~orch (/rds/general/user/mb3324/home/miniforge3/envs/pytorch_env/lib/python3.11/site-packages)
+WARNING: Ignoring invalid distribution ~orch (/rds/general/user/mb3324/home/miniforge3/envs/pytorch_env/lib/python3.11/site-packages)
+../../source/elmfire_spread_rate.f90:299:39:
+
+  299 | SUBROUTINE UMD_UCB_BLDG_SPREAD(C, LB, T)
+      |                                       1
+Warning: Unused dummy argument ‘t’ at (1) [-Wunused-dummy-argument]
+../../source/elmfire_spotting.f90:46:80:
+
+   46 |                     ICASE, DT, TIME_NOW, TAU, IGNMULT, BLDG_FOOTPRINT_FRAC_LOCAL, &
+      |                                                                                1
+Warning: Unused dummy argument ‘bldg_footprint_frac_local’ at (1) [-Wunused-dummy-argument]
+../../source/elmfire_spotting.f90:47:23:
+
+   47 |                     FMC, IFBFM, WN_FUEL)
+      |                       1
+Warning: Unused dummy argument ‘fmc’ at (1) [-Wunused-dummy-argument]
+../../source/elmfire_spotting.f90:47:39:
+
+   47 |                     FMC, IFBFM, WN_FUEL)
+      |                                       1
+Warning: Unused dummy argument ‘wn_fuel’ at (1) [-Wunused-dummy-argument]
+sh: /usr/bin/gdal_translate: No such file or directory
+Fortran runtime error: EXECUTE_COMMAND_LINE: Invalid command line
+
+Error termination. Backtrace:
+#0  0x1473be07c75b in set_cmdstat
+	at ../../../libgfortran/intrinsics/execute_command_line.c:68
+#1  0x1473be07c75b in set_cmdstat
+	at ../../../libgfortran/intrinsics/execute_command_line.c:59
+#2  0x1473be07c75b in execute_command_line
+	at ../../../libgfortran/intrinsics/execute_command_line.c:156
+#3  0x4299bf in ???
+#4  0x459a0d in ???
+#5  0x4025e6 in ???
+#6  0x1473bd487d84 in ???
+#7  0x40261d in ???
+#8  0xffffffffffffffff in ???
+ERROR 4: ./outputs/*.bil: No such file or directory
+ls: cannot access './outputs/time_of_arrival*.tif': No such file or directory
+ERROR 1: dst_filename: 1 argument(s) expected. 0 provided.
+mv: cannot stat 'outputs/*': No such file or directory
+sh: /usr/bin/gdal_translate: No such file or directory
+Fortran runtime error: EXECUTE_COMMAND_LINE: Invalid command line
+
+Error termination. Backtrace:
+#0  0x14ae9e1a475b in set_cmdstat
+	at ../../../libgfortran/intrinsics/execute_command_line.c:68
+#1  0x14ae9e1a475b in set_cmdstat
+	at ../../../libgfortran/intrinsics/execute_command_line.c:59
+#2  0x14ae9e1a475b in execute_command_line
+	at ../../../libgfortran/intrinsics/execute_command_line.c:156
+#3  0x4299bf in ???
+#4  0x459a0d in ???
+#5  0x4025e6 in ???
+#6  0x14ae9d5afd84 in ???
+#7  0x40261d in ???
+#8  0xffffffffffffffff in ???
+ERROR 4: ./outputs/*.bil: No such file or directory
+ls: cannot access './outputs/time_of_arrival*.tif': No such file or directory
+ERROR 1: dst_filename: 1 argument(s) expected. 0 provided.
+mv: cannot stat 'outputs/*': No such file or directory
+sh: /usr/bin/gdal_translate: No such file or directory
+Fortran runtime error: EXECUTE_COMMAND_LINE: Invalid command line
+
+Error termination. Backtrace:
+#0  0x148fe118375b in set_cmdstat
+	at ../../../libgfortran/intrinsics/execute_command_line.c:68
+#1  0x148fe118375b in set_cmdstat
+	at ../../../libgfortran/intrinsics/execute_command_line.c:59
+#2  0x148fe118375b in execute_command_line
+	at ../../../libgfortran/intrinsics/execute_command_line.c:156
+#3  0x4299bf in ???
+#4  0x459a0d in ???
+#5  0x4025e6 in ???
+#6  0x148fe058ed84 in ???
+#7  0x40261d in ???
+#8  0xffffffffffffffff in ???
+ERROR 4: ./outputs/*.bil: No such file or directory
+ls: cannot access './outputs/time_of_arrival*.tif': No such file or directory
+ERROR 1: dst_filename: 1 argument(s) expected. 0 provided.
+mv: cannot stat 'outputs/*': No such file or directory
+sh: /usr/bin/gdal_translate: No such file or directory
+Fortran runtime error: EXECUTE_COMMAND_LINE: Invalid command line
+
+Error termination. Backtrace:
+#0  0x15528037b75b in set_cmdstat
+	at ../../../libgfortran/intrinsics/execute_command_line.c:68
+#1  0x15528037b75b in set_cmdstat
+	at ../../../libgfortran/intrinsics/execute_command_line.c:59
+#2  0x15528037b75b in execute_command_line
+	at ../../../libgfortran/intrinsics/execute_command_line.c:156
+#3  0x4299bf in ???
+#4  0x459a0d in ???
+#5  0x4025e6 in ???
+#6  0x15527f786d84 in ???
+#7  0x40261d in ???
+#8  0xffffffffffffffff in ???
+ERROR 4: ./outputs/*.bil: No such file or directory
+ls: cannot access './outputs/time_of_arrival*.tif': No such file or directory
+ERROR 1: dst_filename: 1 argument(s) expected. 0 provided.
+mv: cannot stat 'outputs/*': No such file or directory
+sh: /usr/bin/gdal_translate: No such file or directory
+Fortran runtime error: EXECUTE_COMMAND_LINE: Invalid command line
+
+Error termination. Backtrace:
+#0  0x145e4564d75b in set_cmdstat
+	at ../../../libgfortran/intrinsics/execute_command_line.c:68
+#1  0x145e4564d75b in set_cmdstat
+	at ../../../libgfortran/intrinsics/execute_command_line.c:59
+#2  0x145e4564d75b in execute_command_line
+	at ../../../libgfortran/intrinsics/execute_command_line.c:156
+#3  0x4299bf in ???
+#4  0x459a0d in ???
+#5  0x4025e6 in ???
+#6  0x145e44a58d84 in ???
+#7  0x40261d in ???
+#8  0xffffffffffffffff in ???
+ERROR 4: ./outputs/*.bil: No such file or directory
+ls: cannot access './outputs/time_of_arrival*.tif': No such file or directory
+ERROR 1: dst_filename: 1 argument(s) expected. 0 provided.
+mv: cannot stat 'outputs/*': No such file or directory
+sh: /usr/bin/gdal_translate: No such file or directory
+Fortran runtime error: EXECUTE_COMMAND_LINE: Invalid command line
+
+Error termination. Backtrace:
+#0  0x149e984a775b in set_cmdstat
+	at ../../../libgfortran/intrinsics/execute_command_line.c:68
+#1  0x149e984a775b in set_cmdstat
+	at ../../../libgfortran/intrinsics/execute_command_line.c:59
+#2  0x149e984a775b in execute_command_line
+	at ../../../libgfortran/intrinsics/execute_command_line.c:156
+#3  0x4299bf in ???
+#4  0x459a0d in ???
+#5  0x4025e6 in ???
+#6  0x149e978b2d84 in ???
+#7  0x40261d in ???
+#8  0xffffffffffffffff in ???
+ERROR 4: ./outputs/*.bil: No such file or directory
+ls: cannot access './outputs/time_of_arrival*.tif': No such file or directory
+ERROR 1: dst_filename: 1 argument(s) expected. 0 provided.
+mv: cannot stat 'outputs/*': No such file or directory
+sh: /usr/bin/gdal_translate: No such file or directory
+Fortran runtime error: EXECUTE_COMMAND_LINE: Invalid command line
+
+Error termination. Backtrace:
+#0  0x1496f5c2375b in set_cmdstat
+	at ../../../libgfortran/intrinsics/execute_command_line.c:68
+#1  0x1496f5c2375b in set_cmdstat
+	at ../../../libgfortran/intrinsics/execute_command_line.c:59
+#2  0x1496f5c2375b in execute_command_line
+	at ../../../libgfortran/intrinsics/execute_command_line.c:156
+#3  0x4299bf in ???
+#4  0x459a0d in ???
+#5  0x4025e6 in ???
+#6  0x1496f502ed84 in ???
+#7  0x40261d in ???
+#8  0xffffffffffffffff in ???
+ERROR 4: ./outputs/*.bil: No such file or directory
+ls: cannot access './outputs/time_of_arrival*.tif': No such file or directory
+ERROR 1: dst_filename: 1 argument(s) expected. 0 provided.
+mv: cannot stat 'outputs/*': No such file or directory
+sh: /usr/bin/gdal_translate: No such file or directory
+Fortran runtime error: EXECUTE_COMMAND_LINE: Invalid command line
+
+Error termination. Backtrace:
+#0  0x145f0bd8b75b in set_cmdstat
+	at ../../../libgfortran/intrinsics/execute_command_line.c:68
+#1  0x145f0bd8b75b in set_cmdstat
+	at ../../../libgfortran/intrinsics/execute_command_line.c:59
+#2  0x145f0bd8b75b in execute_command_line
+	at ../../../libgfortran/intrinsics/execute_command_line.c:156
+#3  0x4299bf in ???
+#4  0x459a0d in ???
+#5  0x4025e6 in ???
+#6  0x145f0b196d84 in ???
+#7  0x40261d in ???
+#8  0xffffffffffffffff in ???
+ERROR 4: ./outputs/*.bil: No such file or directory
+ls: cannot access './outputs/time_of_arrival*.tif': No such file or directory
+ERROR 1: dst_filename: 1 argument(s) expected. 0 provided.
+mv: cannot stat 'outputs/*': No such file or directory
+sh: /usr/bin/gdal_translate: No such file or directory
+Fortran runtime error: EXECUTE_COMMAND_LINE: Invalid command line
+
+Error termination. Backtrace:
+#0  0x15000bbf475b in set_cmdstat
+	at ../../../libgfortran/intrinsics/execute_command_line.c:68
+#1  0x15000bbf475b in set_cmdstat
+	at ../../../libgfortran/intrinsics/execute_command_line.c:59
+#2  0x15000bbf475b in execute_command_line
+	at ../../../libgfortran/intrinsics/execute_command_line.c:156
+#3  0x4299bf in ???
+#4  0x459a0d in ???
+#5  0x4025e6 in ???
+#6  0x15000afffd84 in ???
+#7  0x40261d in ???
+#8  0xffffffffffffffff in ???
+ERROR 4: ./outputs/*.bil: No such file or directory
+ls: cannot access './outputs/time_of_arrival*.tif': No such file or directory
+ERROR 1: dst_filename: 1 argument(s) expected. 0 provided.
+mv: cannot stat 'outputs/*': No such file or directory
+sh: /usr/bin/gdal_translate: No such file or directory
+Fortran runtime error: EXECUTE_COMMAND_LINE: Invalid command line
+
+Error termination. Backtrace:
+#0  0x14d6983a175b in set_cmdstat
+	at ../../../libgfortran/intrinsics/execute_command_line.c:68
+#1  0x14d6983a175b in set_cmdstat
+	at ../../../libgfortran/intrinsics/execute_command_line.c:59
+#2  0x14d6983a175b in execute_command_line
+	at ../../../libgfortran/intrinsics/execute_command_line.c:156
+#3  0x4299bf in ???
+#4  0x459a0d in ???
+#5  0x4025e6 in ???
+#6  0x14d6977acd84 in ???
+#7  0x40261d in ???
+#8  0xffffffffffffffff in ???
+ERROR 4: ./outputs/*.bil: No such file or directory
+ls: cannot access './outputs/time_of_arrival*.tif': No such file or directory
+ERROR 1: dst_filename: 1 argument(s) expected. 0 provided.
+mv: cannot stat 'outputs/*': No such file or directory
+Traceback (most recent call last):
+  File "/var/tmp/pbs.809256.pbs-7/elmfire/docker_shared_folder/practice-runs/./postprocess/add_firearea_to_input_tracking.py", line 13, in <module>
+    raise ValueError(f"Number of fire areas ({len(fire_areas)+1}) does not match number of lines in {output_file} ({len(lines)})")
+ValueError: Number of fire areas (1) does not match number of lines in ./configuration/input_tracking.txt (11)
+cp: cannot stat '/var/tmp/pbs.809256.pbs-7/elmfire/docker_shared_folder/01-dataset/outputs/*': No such file or directory
